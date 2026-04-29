@@ -1,0 +1,17 @@
+# ARIS Agent Usage Active Context
+
+## Latest Update
+- Time: 2026-04-29 12:04
+- Topic: aris-agent-usage
+- Request: 说明本仓库如何安装、如何配置、如何在本机使用。
+- Key Findings:
+  - 本项目目录当前无 `work_logs/`，本次已建立项目级归档目录。
+  - ARIS 的技能入口、工作流、产物链和跨模型协议集中定义在 `README.md` 与 `AGENT_GUIDE.md`。
+  - 安装路径分为：Claude Code 项目本地 symlink 安装、Claude Code 全局安装、Codex 原生 `~/.codex/skills` 安装、Codex reviewer overlay 安装。
+  - 当前机器状态更接近“Codex 已装、MCP 未配、Claude 未装”的起点。
+- Plan And Breakpoints:
+  - 先输出分层操作手册：基础认知 -> 推荐安装 -> Codex 路线 -> `CLAUDE.md` 配置 -> 常用命令 -> 排障。
+  - 如用户后续要求落地，我可以继续直接执行安装、注册 MCP、生成项目模板。
+
+## History Summary
+- 2026-04-29 12:04: 建立项目级 ARIS 使用快照并记录当前环境缺口。

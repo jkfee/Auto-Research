@@ -1,0 +1,15 @@
+# File Changelog
+
+## Latest Update
+- Time: 2026-04-29 12:10
+- Scope: documentation-only
+- Files Created/Updated:
+  - `/data1/user/fangjiukai/Copilot_summary/ARIS/aris-agent-usage_active_context.md`
+  - `work_logs/aris-agent-usage_active_context.md`
+  - `work_logs/file_changelog.md`
+- Notes:
+  - 本次未修改 ARIS 代码、skills、MCP server 或运行配置。
+  - 本次仅更新 Codex 主控、非 Claude reviewer 选型相关工作记忆。
+
+## History Summary
+- 2026-04-29 12:10: 更新 ARIS 使用说明归档，记录 reviewer 替代方案优先级。

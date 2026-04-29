@@ -1,0 +1,15 @@
+# File Changelog
+
+## Latest Update
+- Time: 2026-04-29 12:04
+- Scope: documentation-only
+- Files Created/Updated:
+  - `work_logs/aris-agent-usage_active_context.md`
+  - `work_logs/file_changelog.md`
+  - `/data1/user/fangjiukai/Copilot_summary/aris-agent-usage_active_context.md`
+- Notes:
+  - 本次未修改 ARIS 业务代码、skills、MCP server 或脚本。
+  - 本次仅新增工作记忆归档与变更记录文件。
+
+## History Summary
+- 2026-04-29 12:04: 新建 ARIS 使用说明相关归档文件，无源码改动。
