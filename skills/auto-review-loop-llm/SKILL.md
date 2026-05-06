@@ -21,6 +21,16 @@ Autonomously iterate: review → implement fixes → re-review, until the extern
 
 This skill uses **any OpenAI-compatible API** for external review via the `llm-chat` MCP server.
 
+# ===== [jkfang修改 START 2026-04-30 02:09] [DeepSeek v4 reviewer routing] =====
+For the local ARIS-Code setup, DeepSeek review should use:
+
+- `LLM_BASE_URL=https://api.deepseek.com`
+- `LLM_MODEL=deepseek-v4-pro`
+- `ARIS_REVIEWER_MODEL=deepseek-v4-pro`
+
+Do **not** hard-code `deepseek-chat` for new review calls. If ARIS-Code exposes `LlmReview` instead of `mcp__llm-chat__chat`, omit the model unless a specific model is required; otherwise pass `deepseek-v4-pro`. Ensure the reviewer key comes from `LLM_API_KEY` / `ARIS_REVIEWER_AUTH_TOKEN`, not from an executor gateway key stored in `EXECUTOR_API_KEY`.
+# ===== [jkfang修改 END 2026-04-30 02:09] [DeepSeek v4 reviewer routing] =====
+
 ### Configuration via MCP Server (Recommended)
 
 Add to `~/.claude/settings.json`:
@@ -33,8 +43,8 @@ Add to `~/.claude/settings.json`:
       "args": ["/Users/yourname/.claude/mcp-servers/llm-chat/server.py"],
       "env": {
         "LLM_API_KEY": "your-api-key",
-        "LLM_BASE_URL": "https://api.deepseek.com/v1",
-        "LLM_MODEL": "deepseek-chat"
+        "LLM_BASE_URL": "https://api.deepseek.com",
+        "LLM_MODEL": "deepseek-v4-pro"
       }
     }
   }
@@ -46,7 +56,7 @@ Add to `~/.claude/settings.json`:
 | Provider | LLM_BASE_URL | LLM_MODEL |
 |----------|--------------|-----------|
 | **OpenAI** | `https://api.openai.com/v1` | `gpt-4o`, `o3` |
-| **DeepSeek** | `https://api.deepseek.com/v1` | `deepseek-chat`, `deepseek-reasoner` |
+| **DeepSeek** | `https://api.deepseek.com` | `deepseek-v4-pro`, `deepseek-v4-flash` |
 | **MiniMax** | `https://api.minimax.io/v1` | `MiniMax-M2.7` |
 | **Kimi (Moonshot)** | `https://api.moonshot.cn/v1` | `moonshot-v1-8k`, `moonshot-v1-32k` |
 | **ZhiPu (GLM)** | `https://open.bigmodel.cn/api/paas/v4` | `glm-4`, `glm-4-plus` |
@@ -62,7 +72,7 @@ Add to `~/.claude/settings.json`:
 mcp__llm-chat__chat:
   prompt: |
     [Review prompt content]
-  model: "deepseek-chat"
+  model: "deepseek-v4-pro"
   system: "You are a senior ML reviewer..."
 ```
 
