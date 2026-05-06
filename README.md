@@ -1,3 +1,16 @@
+<!-- ===== [jkfang修改 START 2026-05-06] [项目版本说明-含备份时间戳] ===== -->
+# Project Version Notes
+
+This repository is a research-modified snapshot based on ARIS. The original ARIS README is preserved below this project note.
+
+- **v0.0**: Initial backup snapshot. This version preserves the initial state of the ARIS codebase. Backup timestamp: **2026-04-29 20:05:13 CST**.
+- **v0.1**: Deepseek fix and ARIS workflow updates. This version fixes deepseek-related issues and includes ARIS workflow improvements with updated SKILL.md files and new work_logs. Backup timestamp: **2026-05-06 15:51:39 CST**.
+
+Backup rule for this repository: every future backup commit/tag/version note must include an explicit backup timestamp with timezone.
+
+Sensitive files (API keys, personal settings) are intentionally kept out of Git through `.gitignore`.
+<!-- ===== [jkfang修改 END 2026-05-06] [项目版本说明-含备份时间戳] ===== -->
+
 # Auto-claude-code-research-in-sleep (ARIS ⚔️🌙)
 
 💡 *Use ARIS in Claude Code / Cursor / Trae as a skill-based workflow, or get the full experience with the standalone CLI — enjoy any way you like!*
